@@ -7,4 +7,4 @@ def trapezoidal(f, a, b, n):
     s += f(b)/2.0
     return s * h
 
-print( trapezoidal(lambda x:x**2/(1+x**3), 0, 1, 100))
+print(trapezoidal(lambda x:x**2/(1+x**3), 0, 1, 100))
