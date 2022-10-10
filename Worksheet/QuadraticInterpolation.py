@@ -1,0 +1,17 @@
+print('Enter first point:')
+x1=float(input('x1 =  '))
+y1=float(input('y1 =  '))
+print('Enter second point:')
+x2=float(input('x1 =  '))
+y2=float(input('y1 =  '))
+print('Enter third point:')
+x3=float(input('x3 = '))
+y3=float(input('y3 = '))
+
+pt = float(input('Enter point to be interpolated: '))
+b0=y1
+b1=(y2-y1)/(x2-x1)
+b2=(((y3-y2)/(x3-x2))-b1)/(x3-x1)
+f=b0+b1*(pt-x1)+b2*(pt-x1)*(pt-x2)
+print('The quadratic polynomial is: ',b0,'+(',b1,')*(x-(',x1,'))+(',b2,')(x-(',x1,'))*(x-(',x2,'))')
+print('Estimated value using quadratic interpolation is: ',f)
