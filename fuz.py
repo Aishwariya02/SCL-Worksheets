@@ -118,10 +118,13 @@ def defuzzification(throttle_val):
         area.append(a)
     cg = 0
     print(area)
-    '''for index in chosenValues:
-        cg+= area[index] * chosenValues[index][1]
+    i = 0
+    for index in chosenValues:
+        cg+= area[i] * chosenValues[index][1]
+        i+=1
     cg = cg/sum(area)
-    print('Weighted Average or CG = ',round(cg,2))'''
+    #print('Weighted Average or CG = ',round(cg,2))
+    return cg
 
        
 def fuzzy_controller(speed,acc):
