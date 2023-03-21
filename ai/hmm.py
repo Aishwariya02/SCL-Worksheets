@@ -56,12 +56,10 @@ class HMM:
     
         return states
 
-# Define the HMM parameters (example values only, replace with actual parameters)
 transition_probs = np.array([[0.4, 0.5], [0.4, 0.6]])   
 emission_probs = np.array([[0.2, 0.3, 0.3, 0.2], [0.3, 0.2, 0.2, 0.3]])   
 initial_distr = np.array([0.5, 0.5])  
 
-# Create the HMM object
 hmm = HMM(transition_probs, emission_probs, initial_distr)
 
 # (a) Compute the probability of observing the sequence GGCA
