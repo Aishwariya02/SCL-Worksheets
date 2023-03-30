@@ -20,7 +20,7 @@ step_size = 5
 num_iterations = 5
 
 def generate_fractal(state, grammar, num_iterations):
-    """Generate the Koch snowflake string after applying the grammar rules for the given number of iterations."""
+    """Generate string after applying the grammar rules for the given number of iterations."""
     for i in range(num_iterations):
         new_state = ""
         for char in state:
